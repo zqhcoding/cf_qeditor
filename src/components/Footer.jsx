@@ -3,7 +3,7 @@ import './Footer.css';
 
 const Footer = ({ content, lang }) => {
   return (
-    <footer className="footer">
+    <footer id="support" className="footer">
       <div className="container">
         <p className="copyright">{content[lang].footer.copyright}</p>
         <p className="contact">

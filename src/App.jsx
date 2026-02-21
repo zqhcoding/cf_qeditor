@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import Gallery from './components/Gallery';
 import Features from './components/Features';
 import Download from './components/Download';
 import Footer from './components/Footer';
@@ -15,6 +16,7 @@ function App() {
       <Header lang={lang} setLang={setLang} content={content} />
       <main>
         <Hero content={content} lang={lang} />
+        <Gallery content={content} lang={lang} />
         <Features content={content} lang={lang} />
         <Download content={content} lang={lang} />
       </main>

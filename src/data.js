@@ -14,6 +14,7 @@ export const content = {
     },
     features: {
       title: "Key Features",
+      more: "View All Features",
       list: [
         {
           title: "Smart Editing",
@@ -36,18 +37,74 @@ export const content = {
           desc: "Built-in SSH terminal with session management and ANSI support.",
         },
         {
-          title: "Markdown Preview",
-          desc: "Split-view editing for Markdown and HTML with instant preview.",
-        },
-        {
-            title: "MindIR Analysis",
-            desc: "Structure analysis for IR files including Outline and Call Hierarchy graphs.",
-        },
-        {
-            title: "Cross-Platform",
-            desc: "Available on Windows and Linux with consistent experience.",
+            title: "More Features",
+            desc: "Click to see the complete list of capabilities including IR Analysis, Drawing Tools, and more.",
+            isMore: true,
         }
       ],
+      allFeatures: [
+        {
+            category: "Text Editing & Navigation",
+            items: [
+                "Multi-tab editing with duplicate-open prevention",
+                "Drag-and-drop file open",
+                "Line numbers and detailed status bar",
+                "Zoom in/out",
+                "External file change detection",
+                "Navigation history (Step Back/Forward)",
+                "Optional visible whitespace"
+            ]
+        },
+        {
+            category: "Search, Replace & Marking",
+            items: [
+                "Find/replace with Normal, Extended, and Regex modes",
+                "Case-sensitive, whole-word, direction options",
+                "'Find All in Current' with docked results panel",
+                "Mark/unmark current word",
+                "Scrollbar highlights for matches"
+            ]
+        },
+        {
+            category: "Multi-cursor & Selection",
+            items: [
+                "Column-mode capability",
+                "Alt + Click for multiple cursors",
+                "Alt + Drag for rectangular selection",
+                "Alt + Shift + Arrow for vertical expansion"
+            ]
+        },
+        {
+            category: "Compare Tools",
+            items: [
+                "Text Compare: Side-by-side, diff navigation, merge",
+                "Folder Compare: Synchronized tree views, batch copy/delete",
+                "Quick Diff from Tabs"
+            ]
+        },
+        {
+            category: "Specialized Tools",
+            items: [
+                "Hex Editor with synchronized ASCII area",
+                "SSH Terminal with ANSI support",
+                "Desktop Drawing & Screenshot tools",
+                "IR Structure Analysis (Outline, Call Hierarchy)",
+                "Markdown/HTML Preview (Split View)",
+                "Cross-Platform Support (Windows/Linux)"
+            ]
+        }
+      ]
+    },
+    gallery: {
+        title: "Screenshots",
+        images: [
+            "screenshots/screenshot_1.png",
+            "screenshots/screenshot_2.png",
+            "screenshots/screenshot_3.png",
+            "screenshots/screenshot_4.png",
+            "screenshots/screenshot_5.png",
+            "screenshots/screenshot_6.png"
+        ]
     },
     download: {
       title: "Download QEditor",
@@ -81,6 +138,7 @@ export const content = {
     },
     features: {
       title: "核心功能",
+      more: "查看所有功能",
       list: [
         {
           title: "智能编辑",
@@ -103,18 +161,74 @@ export const content = {
           desc: "内置 SSH 终端，支持会话管理与 ANSI 渲染，远程连接更便捷。",
         },
         {
-          title: "Markdown 预览",
-          desc: "Markdown 与 HTML 的分屏实时预览编辑。",
-        },
-        {
-            title: "MindIR 分析",
-            desc: "支持 IR 文件的结构分析，包括大纲视图与调用层级图。",
-        },
-        {
-            title: "跨平台支持",
-            desc: "完美支持 Windows 和 Linux，提供一致的使用体验。",
+            title: "更多功能",
+            desc: "点击查看完整功能列表，包含 IR 分析、绘图工具等更多强大功能。",
+            isMore: true,
         }
       ],
+      allFeatures: [
+        {
+            category: "文本编辑与导航",
+            items: [
+                "多标签页编辑，防止重复打开",
+                "支持拖拽打开文件",
+                "显示行号及详细状态栏信息",
+                "支持缩放",
+                "外部文件变更检测",
+                "导航历史记录（前进/后退）",
+                "可选显示空白字符"
+            ]
+        },
+        {
+            category: "搜索、替换与标记",
+            items: [
+                "支持普通、扩展及正则搜索模式",
+                "区分大小写、全字匹配及循环搜索",
+                "“在当前文件中查找全部”并显示结果面板",
+                "标记/取消标记当前词",
+                "滚动条高亮显示匹配位置"
+            ]
+        },
+        {
+            category: "多光标与列模式",
+            items: [
+                "默认支持列模式",
+                "Alt + 点击：添加多光标",
+                "Alt + 拖拽：矩形选择",
+                "Alt + Shift + 方向键：垂直扩展光标"
+            ]
+        },
+        {
+            category: "比较工具",
+            items: [
+                "文本比较：双文件并排对比、差异导航、合并",
+                "文件夹比较：同步树状视图、批量复制/删除",
+                "通过标签页快速发起比较"
+            ]
+        },
+        {
+            category: "专业工具",
+            items: [
+                "Hex 编辑器（带 ASCII 同步显示）",
+                "内置 SSH 终端（支持 ANSI）",
+                "桌面绘图与截图工具",
+                "IR 结构分析（大纲视图、调用层级图）",
+                "Markdown/HTML 实时预览（分屏编辑）",
+                "跨平台支持（Windows/Linux）"
+            ]
+        }
+      ]
+    },
+    gallery: {
+        title: "界面预览",
+        images: [
+            "screenshots/screenshot_1.png",
+            "screenshots/screenshot_2.png",
+            "screenshots/screenshot_3.png",
+            "screenshots/screenshot_4.png",
+            "screenshots/screenshot_5.png",
+            "screenshots/screenshot_6.png"
+        ]
     },
     download: {
       title: "下载 QEditor",
