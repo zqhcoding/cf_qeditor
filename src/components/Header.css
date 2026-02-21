@@ -18,10 +18,18 @@
 }
 
 .logo {
+  display: flex;
+  align-items: center;
   font-size: 1.5rem;
   font-weight: 700;
   color: #333;
   letter-spacing: -0.5px;
+  gap: 0.5rem;
+}
+
+.logo-img {
+  height: 2rem;
+  width: auto;
 }
 
 .nav {

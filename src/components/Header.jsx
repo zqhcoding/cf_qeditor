@@ -5,7 +5,10 @@ const Header = ({ lang, setLang, content }) => {
   return (
     <header className="header">
       <div className="container">
-        <div className="logo">QEditor</div>
+        <div className="logo">
+          <img src="/logo.svg" alt="QEditor Logo" className="logo-img" />
+          QEditor
+        </div>
         <nav className="nav">
           <a href="#features">{content[lang].nav.features}</a>
           <a href="#download">{content[lang].nav.download}</a>
