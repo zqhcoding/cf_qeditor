@@ -6,7 +6,7 @@ const Header = ({ lang, setLang, content }) => {
     <header className="header">
       <div className="container">
         <div className="logo">
-          <img src="/logo.svg" alt="QEditor Logo" className="logo-img" />
+          <img src="logo.svg" alt="QEditor Logo" className="logo-img" />
           QEditor
         </div>
         <nav className="nav">
