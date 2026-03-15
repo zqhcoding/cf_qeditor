@@ -365,4 +365,37 @@ export const downloads = {
       },
     ],
   },
+  v1_0_0: {
+    version: "v1.0.0",
+    date: "2026-02-21",
+    linux: [
+      {
+        name: "QEditor_1.0.0_Linux_amd64.deb",
+        url: "https://gitee.com/zqhcoding/QEditor-Release/releases/download/QEditor_v1.0.0/QEditor_1.0.0_Linux_amd64.deb",
+        type: "DEB Package",
+      },
+      {
+        name: "QEditor_1.0.0_Linux_amd64.AppImage",
+        url: "https://gitee.com/zqhcoding/QEditor-Release/releases/download/QEditor_v1.0.0/QEditor_1.0.0_Linux_amd64.AppImage",
+        type: "AppImage",
+      },
+      {
+        name: "QEditor_1.0.0_Linux_amd64_bundle.zip",
+        url: "https://gitee.com/zqhcoding/QEditor-Release/releases/download/QEditor_v1.0.0/QEditor_1.0.0_Linux_amd64_bundle.zip",
+        type: "ZIP Bundle",
+      },
+    ],
+    windows: [
+      {
+        name: "QEditor_1.0.0_Windows_amd64_setup.exe",
+        url: "https://gitee.com/zqhcoding/QEditor-Release/releases/download/QEditor_v1.0.0/QEditor_1.0.0_Windows_amd64_setup.exe",
+        type: "Installer (exe)",
+      },
+      {
+        name: "QEditor_1.0.0_Windows_amd64.zip",
+        url: "https://gitee.com/zqhcoding/QEditor-Release/releases/download/QEditor_v1.0.0/QEditor_1.0.0_Windows_amd64.zip",
+        type: "Portable (zip)",
+      },
+    ],
+  },
 };
