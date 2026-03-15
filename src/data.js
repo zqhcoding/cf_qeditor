@@ -156,7 +156,6 @@ export const content = {
       size: "Size",
       date: "Date",
       download_btn: "Download",
-      note: "More versions coming soon.",
     },
     footer: {
       copyright: "© 2026 QEditor. All rights reserved.",
@@ -321,7 +320,6 @@ export const content = {
       size: "大小",
       date: "日期",
       download_btn: "下载",
-      note: "更多版本敬请期待。",
     },
     footer: {
       copyright: "© 2026 QEditor. 保留所有权利。",
@@ -398,4 +396,21 @@ export const downloads = {
       },
     ],
   },
+};
+
+export const getLatestVersionKey = () => {
+  const keys = Object.keys(downloads);
+  const sorted = keys.sort((a, b) => {
+    const parseVersion = (v) => v.replace('v', '').replace(/_/g, '.').split('.').map(Number);
+    const va = parseVersion(a);
+    const vb = parseVersion(b);
+
+    for (let i = 0; i < 3; i++) {
+      if (va[i] > vb[i]) return -1;
+      if (va[i] < vb[i]) return 1;
+    }
+    return 0;
+  });
+
+  return sorted[0];
 };

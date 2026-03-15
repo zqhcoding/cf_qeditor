@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { downloads } from '../data';
+import { downloads, getLatestVersionKey } from '../data';
 import './Download.css';
 
 const Download = ({ content, lang }) => {
   const [activeOS, setActiveOS] = useState('linux');
-  const release = downloads.v1_0_0;
+  const release = downloads[getLatestVersionKey()];
 
   return (
     <section id="download" className="download">
@@ -48,7 +48,6 @@ const Download = ({ content, lang }) => {
           </div>
         </div>
         
-        <p className="note">{content[lang].download.note}</p>
       </div>
     </section>
   );
