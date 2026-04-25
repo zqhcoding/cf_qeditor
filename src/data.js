@@ -22,7 +22,7 @@ export const content = {
         },
         {
           title: "Search & Replace",
-          desc: "Find/replace with Regex, results panel, search history, memory limits for large files.",
+          desc: "Find/replace with Regex, results panel, search history, configurable search scope.",
         },
         {
           title: "Compare Tools",
@@ -279,7 +279,7 @@ export const content = {
         },
         {
           title: "搜索与替换",
-          desc: "正则搜索，结果面板，搜索历史，大文件内存限制。",
+          desc: "正则搜索，结果面板，搜索历史，可配置搜索范围。",
         },
         {
           title: "比较工具",
