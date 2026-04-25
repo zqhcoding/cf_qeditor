@@ -37,20 +37,8 @@ export const content = {
           desc: "Built-in SSH terminal, plugin architecture, integrated file explorer, ANSI support.",
         },
         {
-          title: "Drawing & Screenshot",
-          desc: "Desktop annotation tools, area screenshot, undo/redo for drawing.",
-        },
-        {
-          title: "IR Analysis",
-          desc: "Outline panel, function/node hierarchy graphs, quick navigation.",
-        },
-        {
-          title: "Large File Editor",
-          desc: "Piece-based storage for files exceeding threshold, full editing support.",
-        },
-        {
             title: "More Features",
-            desc: "Markdown/HTML preview, Base64 converter, themes, multi-cursor, and more.",
+            desc: "Drawing/screenshot, large file editor, Markdown preview, Base64 converter, themes, multi-cursor, and more.",
             isMore: true,
         }
       ],
@@ -305,20 +293,8 @@ export const content = {
           desc: "内置 SSH 终端，插件化架构，集成文件浏览器，ANSI 支持。",
         },
         {
-          title: "绘图与截图",
-          desc: "桌面标注工具，区域截图，绘图撤销/重做。",
-        },
-        {
-          title: "IR 分析",
-          desc: "大纲面板，函数/节点层级图，快速跳转。",
-        },
-        {
-          title: "大文件编辑",
-          desc: "超过阈值自动启用分片存储，完整编辑支持。",
-        },
-        {
             title: "更多功能",
-            desc: "Markdown/HTML 预览、Base64 转换、多主题、多光标等。",
+            desc: "绘图与截图、大文件编辑、Markdown 预览、Base64 转换、多主题、多光标等。",
             isMore: true,
         }
       ],
