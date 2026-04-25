@@ -25,6 +25,12 @@ const Download = ({ content, lang }) => {
           >
             Linux
           </button>
+          <button
+            className={`tab-btn ${activeOS === 'mac' ? 'active' : ''}`}
+            onClick={() => setActiveOS('mac')}
+          >
+            macOS
+          </button>
         </div>
 
         <div className="download-card">
@@ -34,17 +40,23 @@ const Download = ({ content, lang }) => {
           </div>
           
           <div className="file-list">
-            {release[activeOS].map((file, idx) => (
-              <div key={idx} className="file-item">
-                <div className="file-info">
-                  <span className="file-type">{file.type}</span>
-                  <span className="file-name">{file.name}</span>
-                </div>
-                <a href={file.url} className="download-link-btn" target="_blank" rel="noopener noreferrer">
-                  {content[lang].download.download_btn}
-                </a>
+            {activeOS === 'mac' && release.mac?.placeholder ? (
+              <div className="placeholder-message">
+                {release.mac.message[lang]}
               </div>
-            ))}
+            ) : (
+              release[activeOS].map((file, idx) => (
+                <div key={idx} className="file-item">
+                  <div className="file-info">
+                    <span className="file-type">{file.type}</span>
+                    <span className="file-name">{file.name}</span>
+                  </div>
+                  <a href={file.url} className="download-link-btn" target="_blank" rel="noopener noreferrer">
+                    {content[lang].download.download_btn}
+                  </a>
+                </div>
+              ))
+            )}
           </div>
         </div>
         

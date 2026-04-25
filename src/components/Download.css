@@ -124,6 +124,14 @@
   background: #218838;
 }
 
+.placeholder-message {
+  text-align: center;
+  color: #888;
+  padding: 3rem 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
 .note {
   font-size: 0.9rem;
   color: #888;

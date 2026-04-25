@@ -244,6 +244,7 @@ export const content = {
       subtitle: "Choose the version for your operating system.",
       windows: "Windows",
       linux: "Linux",
+      mac: "macOS",
       version_label: "Version",
       size: "Size",
       date: "Date",
@@ -500,6 +501,7 @@ export const content = {
       subtitle: "请选择适合您操作系统的版本。",
       windows: "Windows",
       linux: "Linux",
+      mac: "macOS",
       version_label: "版本",
       size: "大小",
       date: "日期",
@@ -546,6 +548,13 @@ export const downloads = {
         type: "Portable (zip)",
       },
     ],
+    mac: {
+      placeholder: true,
+      message: {
+        en: "macOS version not yet available. Please contact us for custom build if needed.",
+        zh: "macOS 版本暂未提供，如有需求请联系我们获取定制构建。"
+      }
+    }
   },
   v1_1_2: {
     version: "v1.1.2",
@@ -579,6 +588,13 @@ export const downloads = {
         type: "Portable (zip)",
       },
     ],
+    mac: {
+      placeholder: true,
+      message: {
+        en: "macOS version not yet available. Please contact us for custom build if needed.",
+        zh: "macOS 版本暂未提供，如有需求请联系我们获取定制构建。"
+      }
+    }
   },
   v1_0_0: {
     version: "v1.0.0",
@@ -612,6 +628,13 @@ export const downloads = {
         type: "Portable (zip)",
       },
     ],
+    mac: {
+      placeholder: true,
+      message: {
+        en: "macOS version not yet available. Please contact us for custom build if needed.",
+        zh: "macOS 版本暂未提供，如有需求请联系我们获取定制构建。"
+      }
+    }
   },
 };
 
