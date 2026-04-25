@@ -3,7 +3,7 @@ import { downloads, getLatestVersionKey } from '../data';
 import './Download.css';
 
 const Download = ({ content, lang }) => {
-  const [activeOS, setActiveOS] = useState('linux');
+  const [activeOS, setActiveOS] = useState('windows');
   const release = downloads[getLatestVersionKey()];
 
   return (
@@ -14,16 +14,16 @@ const Download = ({ content, lang }) => {
 
         <div className="os-tabs">
           <button
-            className={`tab-btn ${activeOS === 'linux' ? 'active' : ''}`}
-            onClick={() => setActiveOS('linux')}
-          >
-            Linux
-          </button>
-          <button
             className={`tab-btn ${activeOS === 'windows' ? 'active' : ''}`}
             onClick={() => setActiveOS('windows')}
           >
             Windows
+          </button>
+          <button
+            className={`tab-btn ${activeOS === 'linux' ? 'active' : ''}`}
+            onClick={() => setActiveOS('linux')}
+          >
+            Linux
           </button>
         </div>
 
