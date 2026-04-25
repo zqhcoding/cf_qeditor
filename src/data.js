@@ -9,8 +9,8 @@ export const content = {
     hero: {
       title: "QEditor",
       subtitle: "A Qt-based desktop text editor focused on being lightweight while still practical for development and troubleshooting workflows.",
-      cta: "Download v1.1.2",
-      version: "Latest: v1.1.2",
+      cta: "Download v1.2.5",
+      version: "Latest: v1.2.5",
     },
     features: {
       title: "Key Features",
@@ -173,8 +173,8 @@ export const content = {
     hero: {
       title: "QEditor",
       subtitle: "一个基于 Qt 的桌面文本编辑器，定位为「轻量但功能完整」的开发工具。",
-      cta: "下载 v1.1.2",
-      version: "最新版本: v1.1.2",
+      cta: "下载 v1.2.5",
+      version: "最新版本: v1.2.5",
     },
     features: {
       title: "核心功能",
@@ -330,6 +330,39 @@ export const content = {
 };
 
 export const downloads = {
+  v1_2_5: {
+    version: "v1.2.5",
+    date: "2026-04-26",
+    linux: [
+      {
+        name: "QEditor_1.2.5_Linux_amd64.deb",
+        url: "https://gitee.com/zqhcoding/QEditor-Release/releases/download/QEditor_v1.2.5/QEditor_1.2.5_Linux_amd64.deb",
+        type: "DEB Package",
+      },
+      {
+        name: "QEditor_1.2.5_Linux_amd64.AppImage",
+        url: "https://gitee.com/zqhcoding/QEditor-Release/releases/download/QEditor_v1.2.5/QEditor_1.2.5_Linux_amd64.AppImage",
+        type: "AppImage",
+      },
+      {
+        name: "QEditor_1.2.5_Linux_amd64_bundle.zip",
+        url: "https://gitee.com/zqhcoding/QEditor-Release/releases/download/QEditor_v1.2.5/QEditor_1.2.5_Linux_amd64_bundle.zip",
+        type: "ZIP Bundle",
+      },
+    ],
+    windows: [
+      {
+        name: "QEditor_1.2.5_Windows_amd64_setup.exe",
+        url: "https://gitee.com/zqhcoding/QEditor-Release/releases/download/QEditor_v1.2.5/QEditor_1.2.5_Windows_amd64_setup.exe",
+        type: "Installer (exe)",
+      },
+      {
+        name: "QEditor_1.2.5_Windows_amd64.zip",
+        url: "https://gitee.com/zqhcoding/QEditor-Release/releases/download/QEditor_v1.2.5/QEditor_1.2.5_Windows_amd64.zip",
+        type: "Portable (zip)",
+      },
+    ],
+  },
   v1_1_2: {
     version: "v1.1.2",
     date: "2026-03-15",
