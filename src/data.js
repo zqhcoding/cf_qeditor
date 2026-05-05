@@ -8,9 +8,9 @@ export const content = {
     },
     hero: {
       title: "QEditor",
-      subtitle: "A lightweight desktop text editor with practical features for development and troubleshooting.",
-      cta: "Download v1.2.5",
-      version: "Latest: v1.2.5",
+      subtitle: "A lightweight desktop text editor with practical features.",
+      cta: "Download v1.2.6",
+      version: "Latest: v1.2.6",
     },
     features: {
       title: "Key Features",
@@ -265,9 +265,9 @@ export const content = {
     },
     hero: {
       title: "QEditor",
-      subtitle: "一款轻量级桌面文本编辑器，兼顾实用功能与开发调试场景。",
-      cta: "下载 v1.2.5",
-      version: "最新版本: v1.2.5",
+      subtitle: "一款轻量级桌面文本编辑器，提供丰富的实用功能。",
+      cta: "下载 v1.2.6",
+      version: "最新版本: v1.2.6",
     },
     features: {
       title: "核心功能",
@@ -516,6 +516,46 @@ export const content = {
 };
 
 export const downloads = {
+  v1_2_6: {
+    version: "v1.2.6",
+    date: "2026-05-05",
+    linux: [
+      {
+        name: "QEditor_1.2.6_Linux_amd64.deb",
+        url: "https://gitee.com/zqhcoding/QEditor-Release/releases/download/QEditor_v1.2.6/QEditor_1.2.6_Linux_amd64.deb",
+        type: "DEB Package",
+      },
+      {
+        name: "QEditor_1.2.6_Linux_amd64.AppImage",
+        url: "https://gitee.com/zqhcoding/QEditor-Release/releases/download/QEditor_v1.2.6/QEditor_1.2.6_Linux_amd64.AppImage",
+        type: "AppImage",
+      },
+      {
+        name: "QEditor_1.2.6_Linux_amd64_bundle.zip",
+        url: "https://gitee.com/zqhcoding/QEditor-Release/releases/download/QEditor_v1.2.6/QEditor_1.2.6_Linux_amd64_bundle.zip",
+        type: "ZIP Bundle",
+      },
+    ],
+    windows: [
+      {
+        name: "QEditor_1.2.6_Windows_amd64_setup.exe",
+        url: "https://gitee.com/zqhcoding/QEditor-Release/releases/download/QEditor_v1.2.6/QEditor_1.2.6_Windows_amd64_setup.exe",
+        type: "Installer (exe)",
+      },
+      {
+        name: "QEditor_1.2.6_Windows_amd64.zip",
+        url: "https://gitee.com/zqhcoding/QEditor-Release/releases/download/QEditor_v1.2.6/QEditor_1.2.6_Windows_amd64.zip",
+        type: "Portable (zip)",
+      },
+    ],
+    mac: {
+      placeholder: true,
+      message: {
+        en: "macOS version not yet available. Please contact us for custom build if needed.",
+        zh: "macOS 版本暂未提供，如有需求请联系我们获取定制构建。"
+      }
+    }
+  },
   v1_2_5: {
     version: "v1.2.5",
     date: "2026-04-26",
