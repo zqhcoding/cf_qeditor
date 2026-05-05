@@ -1,10 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { downloads, getLatestVersionKey } from '../data';
 import './Download.css';
 
 const Download = ({ content, lang }) => {
   const [activeOS, setActiveOS] = useState('windows');
+  const [downloadStats, setDownloadStats] = useState({});
   const release = downloads[getLatestVersionKey()];
+
+  useEffect(() => {
+    fetch('/api/downloads')
+      .then(res => res.json())
+      .then(data => setDownloadStats(data))
+      .catch(console.error);
+  }, []);
+
+  const handleDownload = (version, os, filename) => {
+    fetch('/api/downloads', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ version, os, filename })
+    }).then(res => res.json())
+      .then(data => {
+        setDownloadStats(prev => ({
+          ...prev,
+          [`${version}_${os}_${filename}`]: data.count
+        }));
+      })
+      .catch(console.error);
+  };
+
+  const getStatKey = (version, os, filename) => `${version}_${os}_${filename}`;
 
   return (
     <section id="download" className="download">
@@ -45,17 +70,28 @@ const Download = ({ content, lang }) => {
                 {release.mac.message[lang]}
               </div>
             ) : (
-              release[activeOS].map((file, idx) => (
-                <div key={idx} className="file-item">
-                  <div className="file-info">
-                    <span className="file-type">{file.type}</span>
-                    <span className="file-name">{file.name}</span>
+              release[activeOS].map((file, idx) => {
+                const statKey = getStatKey(release.version, activeOS, file.name);
+                const count = downloadStats[statKey] || 0;
+                return (
+                  <div key={idx} className="file-item">
+                    <div className="file-info">
+                      <span className="file-type">{file.type}</span>
+                      <span className="file-name">{file.name}</span>
+                      <span className="download-count">{count.toLocaleString()} 次下载</span>
+                    </div>
+                    <a 
+                      href={file.url} 
+                      className="download-link-btn" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      onClick={() => handleDownload(release.version, activeOS, file.name)}
+                    >
+                      {content[lang].download.download_btn}
+                    </a>
                   </div>
-                  <a href={file.url} className="download-link-btn" target="_blank" rel="noopener noreferrer">
-                    {content[lang].download.download_btn}
-                  </a>
-                </div>
-              ))
+                );
+              })
             )}
           </div>
         </div>

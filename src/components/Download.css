@@ -108,6 +108,12 @@
   word-break: break-all;
 }
 
+.download-count {
+  font-size: 0.75rem;
+  color: #888;
+  margin-top: 0.25rem;
+}
+
 .download-link-btn {
   background: #28a745;
   color: white;
