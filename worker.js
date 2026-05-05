@@ -1,10 +1,4 @@
-const STATS = {
-  "v1.2.5_windows_QEditor_1.2.5_Windows_amd64_setup.exe": 200,
-  "v1.2.5_windows_QEditor_1.2.5_Windows_amd64.zip": 100,
-  "v1.2.5_linux_QEditor_1.2.5_Linux_amd64.deb": 50,
-  "v1.2.5_linux_QEditor_1.2.5_Linux_amd64.AppImage": 10,
-  "v1.2.5_linux_QEditor_1.2.5_Linux_amd64_bundle.zip": 10
-};
+const STATS = {};
 
 export default {
   async fetch(request, env) {
