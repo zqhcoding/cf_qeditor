@@ -249,6 +249,7 @@ export const content = {
       size: "Size",
       date: "Date",
       download_btn: "Download",
+      downloads_count: "downloads",
     },
     footer: {
       copyright: "© 2026 QEditor. All rights reserved.",
@@ -506,6 +507,7 @@ export const content = {
       size: "大小",
       date: "日期",
       download_btn: "下载",
+      downloads_count: "次下载",
     },
     footer: {
       copyright: "© 2026 QEditor. 保留所有权利。",

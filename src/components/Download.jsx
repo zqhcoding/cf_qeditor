@@ -78,7 +78,7 @@ const Download = ({ content, lang }) => {
                     <div className="file-info">
                       <span className="file-type">{file.type}</span>
                       <span className="file-name">{file.name}</span>
-                      <span className="download-count">{count.toLocaleString()} 次下载</span>
+                      <span className="download-count">{count.toLocaleString()} {content[lang].download.downloads_count}</span>
                     </div>
                     <a 
                       href={file.url} 
